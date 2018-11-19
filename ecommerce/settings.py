@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'axl*vh#$o*nhj67cx=4bc2jm$=(nn@f=fn(=37(cb)8igie=7s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ecommerce74.herokuapp.com']
 
 
 # Application definition
@@ -84,7 +84,9 @@ DATABASES = {
     }
 }
 
-
+import ecommerce_database_url
+db_from_env = ecommerce_url.config()
+DATABASES['default'].update(db_from_env)
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
