@@ -5,7 +5,7 @@ bin/
 include/
 pip-selfcheck.json
 
-
+ecommerce/settings/wsgi.py
 #Distribution / pasckaging
 .Python
 build/
