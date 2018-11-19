@@ -25,7 +25,7 @@ SECRET_KEY = 'axl*vh#$o*nhj67cx=4bc2jm$=(nn@f=fn(=37(cb)8igie=7s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://serene-escarpment-13428.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -130,15 +130,4 @@ STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn","static_root"
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR),"static_cdn","media_root")
 
-LOGOUT_REDIRECT = '/login/'
-LOGIN_REDIRECT_URL = '/'
 
-CORS_REPLACE_HTTPS_REFERER = True
-HOST_SCHEME = "https://"
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'http')
-SECURE_SSL_REDIRECT = True
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-SECURE_HSTS_SECONDS = 1000000
-SECURE_FRAME_DENY = True
