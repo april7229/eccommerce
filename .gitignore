@@ -1,0 +1,15 @@
+.py[cod]
+
+.DS_Store
+bin/
+include/
+pip-selfcheck.json
+
+
+#Distribution / pasckaging
+.Python
+build/
+lib/
+lib64/
+var/
+wheels/
