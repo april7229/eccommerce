@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'axl*vh#$o*nhj67cx=4bc2jm$=(nn@f=fn(=37(cb)8igie=7s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['ecommerce174.herokuapp.com']
+ALLOWED_HOSTS = ['https://serene-escarpment-13428.herokuapp.com']
 
 
 # Application definition
